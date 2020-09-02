@@ -22,6 +22,15 @@ $query1=mysql_query("select * from tbl_specialities where id= $speciality_id");
 <html>
   <head>
     <title>Admin Panel</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173470882-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173470882-1');
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- jQuery UI -->
     <link href="../css/jquery-ui.css" rel="stylesheet" media="screen">

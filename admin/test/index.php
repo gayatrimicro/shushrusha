@@ -8,6 +8,15 @@ $queryRecords = mysqli_query($conn, $sql) or die("error to fetch parts data");
 <html>
 <head>
 	<title></title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173470882-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173470882-1');
+</script>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
