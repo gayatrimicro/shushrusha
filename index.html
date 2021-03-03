@@ -20,6 +20,102 @@
            var ajaxurl = ""
     </script>
     <style id="critical-path-css" type='text/css'>
+      /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999999; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe00;
+  margin: auto;
+  padding: 20px;
+  /*border: 1px solid #888;*/
+  width: 40%;
+  position: relative;
+}
+.link{
+  color: #fff;display: block;text-align: center;width: 100%
+}
+.link:hover{
+  color:#ddd;
+}
+
+
+.modal-content img{
+  width: 60%;
+  display: block;
+  margin: 0 auto
+
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px){
+  .modal-content {
+    background-color: #fefefe00;
+    margin: auto;
+    padding: 0px;
+    /* border: 1px solid #888; */
+    width: 100%;
+    position: relative;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.close {
+    position: absolute;
+    top: -6%;
+    right: 4%;
+    color: #fff;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+.modal-content img {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+}
+
+
            body,
            html {
                width: 100%;
@@ -2224,6 +2320,20 @@
         </style>
 </head>
 <body class="home page page-id-7840 page-template-default loading wpb-js-composer js-comp-ver-4.12.1 vc_responsive" data-adminbar="" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+   <!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="assets/images/adver.jpg">
+    <a href="https://www.vidocto.com/mumbaicleftworkshop/" target="_blank" class="link">https://www.vidocto.com/mumbaicleftworkshop/</a>
+  </div>
+
+</div>
     <div id="top-of-page"></div>
     <div id="mk-boxed-layout">
         <div id="mk-theme-container">
@@ -2288,6 +2398,9 @@
                         <div class="clearboth"></div>
                     </div>
                 </div>
+
+
+
                 <div class="mk-main-wrapper-holder">
                     <div class="theme-page-wrapper no-padding full-layout mk-grid vc_row-fluid">
                         <div class="theme-content no-padding">
@@ -2295,6 +2408,10 @@
                         </div>
                     </div>
                 </div>
+
+
+
+               
                 <div class="mk-page-section-wrapper">
                     <div class="mk-page-section self-hosted full-width-5 js-el js-master-row center-y" data-intro-effect="false" id="page-section-5">
                         <div class="mk-page-section-inner">
@@ -3196,6 +3313,44 @@
                              });
                          };
             </script> 
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+// var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+
+jQuery( document ).ready(function() {
+   setTimeout('modal.style.display = "block"', 500)
+});
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
             <script>
                          (function($) {
                              var loc = window.location,
