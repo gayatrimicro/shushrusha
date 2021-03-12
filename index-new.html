@@ -41,7 +41,7 @@
   margin: auto;
   padding: 20px;
   /*border: 1px solid #888;*/
-  width: 40%;
+  width: 80%;
   position: relative;
 }
 .link{
@@ -51,7 +51,27 @@
   color:#ddd;
 }
 
+.half-box{
+  width: 49%;
+  display: inline-block;
+}
 
+.embed-file{
+  height: 80vh;
+  width: 100%;
+  display: block;
+}
+@media (max-width: 768px){
+  .half-box{
+  width: 100%;
+  display: inline-block;
+}
+.embed-file{
+  height: 80vh;
+  width: 100%;
+  display: block;
+}
+}
 .modal-content img{
   width: 60%;
   display: block;
@@ -62,7 +82,7 @@
 .close {
   position: absolute;
   top: 0;
-  right: 15%;
+  right: 5%;
   color: #fff;
   float: right;
   font-size: 28px;
@@ -2329,8 +2349,14 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <img src="assets/images/adver.jpg">
-    <a href="https://www.vidocto.com/mumbaicleftworkshop/" target="_blank" class="link">https://www.vidocto.com/mumbaicleftworkshop/</a>
+    <div class="half-box">
+      <img src="assets/images/adver.jpg">
+      <a href="https://www.vidocto.com/mumbaicleftworkshop/" target="_blank" class="link">https://www.vidocto.com/mumbaicleftworkshop/</a>
+    </div>
+    <div class="half-box">
+      <embed src="assets/pdf/AGM Notice - Final (11.03.21).pdf" frameborder="0" class="embed-file">
+    </div>
+    
   </div>
 
 </div>
