@@ -981,6 +981,8 @@
                                             <a class="menu-item-link js-smooth-scroll" href="http://www.shushrushahospital.org/member/">MEMBERSHIP</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu" id="menu-item-10137">
+                                            <a class="menu-item-link js-smooth-scroll" href="http://www.shushrushahospital.org/assets/pdf/final report of AGM 19-20.pdf" target="_blank">FINAL AGM</a>
+                                        </li><li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu" id="menu-item-10137">
                                             <a class="menu-item-link js-smooth-scroll" href="http://www.shushrushahospital.org/contact/">CONTACT</a>
                                         </li>
                                     </ul>
